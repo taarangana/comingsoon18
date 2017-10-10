@@ -1,0 +1,104 @@
+body canvas {
+    cursor: move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.grabbable:active { 
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+body {
+    background-color: #000000;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.drawer{
+	position:absolute;
+	width: 100%;
+    height:7%;
+    background: #000;
+	z-index:9999;
+}
+.bottom{ 
+bottom:0;
+}
+.top{
+top:0;
+}
+a#fb>img:hover{
+content: url(../img/logo/face.png);
+  max-height: 5%;
+  width: 30px;
+  display: block;
+  transition: 0.5s;
+}
+a#twi>img:hover{
+content: url(../img/logo/twitter-logo-silhouette-blue.png);
+  max-height: 5%;
+  width: 33px;
+  display: block;
+  transition: 0.5s;
+}
+a#insta>img:hover{
+content: url(../img/logo/instagram.png);
+  max-height: 5%;
+  width: 31px;
+  display: block;
+  transition: 0.5s;
+}
+a#linkedin>img:hover{
+content: url(../img/logo/linkedin.png);
+  max-height: 5%;
+  width: 30px;
+  display: block;
+  transition: 0.5s;
+}
+a#utube>img:hover{
+content: url(../img/logo/utube.png);
+  max-height: 5%;
+  width: 30px;
+  display: block;
+  transition: 0.5s;
+}
+@media (max-width:991px){
+a#fb>img{
+  position:absolute;bottom:1px;right:120px;
+}
+a#twi>img{
+  position:absolute;bottom:1px;right:90px;
+}
+a#insta>img{
+  position:absolute;bottom:1px;right:60px;
+}
+a#linkedin>img{
+  position:absolute;bottom:1px;right:30px;
+}
+a#utube>img{
+  position:absolute;bottom:1px;right:5px;
+}
+a#enactus{
+  content: url(../img/logo/orange-world-map.png);
+  height:15px;max-width:56px;
+}
+
+}
