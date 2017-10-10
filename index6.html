@@ -52,7 +52,7 @@
 	<a-assets>
         <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous">
         <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
-		<a-mixin id="bar" geometry="primitive: box;width:5;depth:5;height:9;"></a-mixin>
+		<a-mixin id="bar" geometry="primitive: box;width:3;depth:3;height:7;"></a-mixin>
         </a-assets>
 	  
 	<!--camera-->
@@ -64,7 +64,7 @@
                 </a-entity>				
 				
      <!--model-->      
-           <a-entity layout="type:circle;radius:25" rotation="0 180 0">
+           <a-entity layout="type:circle;radius:20" rotation="0 180 0">
 <a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
 <a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
 <a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
@@ -82,7 +82,17 @@
 <a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
 <a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
 <a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
-
+<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/biswa.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/biswa.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
+<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
 </a-entity>
 	  
             <a-entity id="model" data-vrscale="0.5 0.5 0.5" data-vr-model-y-axis="0.7" position="3 -1 0">             
@@ -104,7 +114,10 @@
 			<a-entity light="color:#BBB;type:ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
 			<a-entity light="intensity:0.6" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
 			
-      <a-sky src="img/bg/sky.jpg"></a-sky>
+      <a-entity>
+        <a-cylinder position="0 0.5 0" radius="19" height="12" side="back" open-ended="true" src="img/bg/art.png"
+                    color="#FFF"></a-cylinder>
+      </a-entity>
     </a-scene>
 
     <div id="loader" style="display: none;"></div>
