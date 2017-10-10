@@ -33,9 +33,37 @@
     <script src="js/isvr-hotspot.js"></script>
     <script src="js/isvr-annotation.js"></script>
     <script src="js/isvr-teleportation.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	
+    </head>
 
 <body class="a-body ">
+<!-- loader -->
+<div class="load">
+<div class="left">
+<div class="cssload-box-loading">
+</div>
+</div>
 
+ <div class="container">
+  
+<div class="loader loader-9">
+      <svg class="loader-star star1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.172px" height="23.346px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+            <polygon fill="#c6ff00" points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+         </svg>
+      <svg class="loader-star star2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.172px" height="23.346px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+            <polygon fill="#c6ff00" points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9  " />
+         </svg>
+      <svg class="loader-star star3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.172px" height="23.346px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+            <polygon fill="#c6ff00" points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9  " />
+         </svg>
+    </div>
+    </div>
+    </div>
+      <!-- loader close-->
+
+<!--
 <div class="drawer top">
 	<a href="https://www.youtube.com/watch?v=zECOe9u1yRE" data-fancybox>
 	<img src="img/logo/design.gif" style="position:absolute;top:5px;left:6%;height:30px;width:30px;"/>
@@ -46,7 +74,23 @@
 	<span style="position:absolute;top:10px;right:6%;letter-spacing:1px;display:block;text-align:center;font-size:18px;color: white;">Brochure</span>
 	</a>
 	</div>
-	
+	-->
+	<!-- header-->
+	<header class="header-fixed">
+
+  <div class="header-limiter">
+
+    <div id="left"><a href="https://www.youtube.com/watch?v=zECOe9u1yRE"><img src="img/logo/design.gif"><span>Aftermovie<span></a></div>
+
+    <nav>
+      <a href="Taarangana2018Brochure.pdf" ><img src="img/logo/design.gif">Brochure</a>
+    </nav>
+
+  </div>
+
+</header>
+<!-- header close-->
+
     <a-scene>
 	
 	<a-assets>
@@ -80,8 +124,8 @@
 <a-cylinder  src="img/bg/disco.jpg" height="1.5" radius="1.5" position="-3 0 -3" scale="3 0.5 3" material="" geometry=""></a-cylinder>	
 
 <a-entity position="-5 0.5 0" rotation="4 43 0">
-        <a-entity rotation="0 0 5" position="0 2 0.2" text="text: Coming Soon; font:dawning of a new day; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"></a-entity>
-        <a-entity position="-0.5 0.3 -0.5" scale="0.6 1.2 1" text="text: TAARANGANA; font: exo 2 black; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+        <a-entity rotation="0 0 5" position="0 2 0.2" text="text: Coming Soon; font:dawning of a new day; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="color:#d7f70e; metalness:1; roughness: 0; sphericalEnvMap: #pink;"></a-entity>
+        <a-entity position="-0.5 0.3 -0.5" scale="0.6 1.2 1" text="text: TAARANGANA; font: exo 2 black; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:#01f2f7; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
       </a-entity>
 	  
 	<a-box src="img/logo/logo.jpg" id="box" position="-3 5 -3" rotation="-34 47.27411100000999414 34" scale="2 2 2" material="" geometry="">
@@ -95,11 +139,37 @@
 			<a-entity light="intensity:0.6" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
 			
       <a-entity>
-        <a-cylinder position="0 0.5 0" radius="19" height="12" side="back" src="img/bg/art.png"
+        <a-cylinder position="0 0.5 0" radius="19" height="12" side="back" src="img/bg/i2.jpg"
                     color="#FFF"></a-cylinder>
       </a-entity>
     </a-scene>
 
+    <!-- lfooter-->
+     <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/taarangana"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/_taarangana"><i class="fa fa-twitter"></i></a>
+        
+        <a href="https://www.instagram.com/taarangana"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.youtube.com/c/TaaranganaIGDTUW "><i class="fa fa-youtube"></i></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        
+
+        <p>Taarangana 2018<br/>All Rights Reserved</p>
+      </div>
+
+    </footer>
+    <!-- footer close -->
+
+
+
+<!--
     <div id="loader" style="display: none;"></div>
 	
 	<div class="drawer bottom">
@@ -121,7 +191,7 @@
 		</div>		
 			</div>
 			
-			
+			-->
     <script src="js/main.js"></script>
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
@@ -147,6 +217,13 @@ document.getElementById("play").addEventListener("click", function(){
 				document.querySelector("audio").play();
 });
 
+</script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  
+  $(window).load(function() {
+       $(".load").hide();
+    });
 </script>	
   </body>
 </html>
