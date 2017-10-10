@@ -52,7 +52,7 @@
 	<a-assets>
         <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous">
         <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
-		<a-mixin id="bar" geometry="primitive: box;width:5;depth:5;height:9;"></a-mixin>
+		<a-mixin id="bar" geometry="primitive: box;width:0.5;depth:0.5;height:0.5;"></a-mixin>
         </a-assets>
 	  
 	<!--camera-->
@@ -64,31 +64,15 @@
                 </a-entity>				
 				
      <!--model-->      
-           <a-entity layout="type:circle;radius:25" rotation="0 180 0">
-<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/biswa.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/biswa.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/biswa.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/rahul.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/shirley.jpg);" geometry=""></a-entity>
-<a-entity mixin="bar" material="src:url(img/bg/zaeden.jpg);" geometry=""></a-entity>
+           <a-entity id="model" data-vrscale="0.5 0.5 0.5" data-vr-model-y-axis="0.7" position="3 -1 0"> 
 
+<a-entity position="-3 0 -3" >          
+<a-entity entity-generator="mixin: bar; num: 35" layout="type: circle; radius: 7">
+<a-animation attribute="rotation" from="0 0 0" to="360 0 0" dur="100000" easing="linear" repeat="indefinite"></a-animation>
+</a-entity>                
+<a-cylinder  src="img/bg/disco.jpg" height="1.5" radius="1.5" scale="3 0.5 3" material="" geometry="">
+</a-cylinder>	
 </a-entity>
-	  
-            <a-entity id="model" data-vrscale="0.5 0.5 0.5" data-vr-model-y-axis="0.7" position="3 -1 0">             
-                
-<a-cylinder  src="img/bg/disco.jpg" height="1.5" radius="1.5" position="-3 0 -3" scale="3 0.5 3" material="" geometry=""></a-cylinder>	
-
 <a-entity position="-5 0.5 0" rotation="4 43 0">
         <a-entity rotation="0 0 5" position="0 2 0.2" text="text: Coming Soon; font:dawning of a new day; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"></a-entity>
         <a-entity position="-0.5 0.3 -0.5" scale="0.6 1.2 1" text="text: TAARANGANA; font: exo 2 black; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
